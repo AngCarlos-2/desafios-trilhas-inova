@@ -18,14 +18,105 @@
             <h1 class="header__texto">Formulário de inscrição</h1>
             <h2 class="header__texto__preencher">Preencha os dados abaixo para fazer sua inscrição no Programa Trilhas.</h2>
         </div>
-    </header>
-    
-    <main>
+        <body>
+            <section class="informacoes__container">
+                <h2 class="formulario__secao">Informações do participante</h2>
+        
+                <form id="form">
+                    <div class="formulario__grupo">
+                        <label for="nome" class="texto__caixadetexto">Nome completo</label>
+                        <input type="text" class="caixadetexto" id="nome" placeholder="Digite seu nome" required>
+                    </div>
+        
+                    <div class="formulario__grupo">
+                        <label for="nascimento" class="texto__caixadetexto">Data de nascimento</label>
+                        <input type="date" class="caixadetexto" id="nascimento" required>
+                    </div>
+        
+                    <div class="formulario__grupo">
+                        <label for="cpf" class="texto__caixadetexto">CPF</label>
+                        <input type="text" class="caixadetexto" id="cpf" placeholder="XXX.XXX.XXX-XX" required>
+                    </div>
+        
+                    <div class="formulario__grupo">
+                        <label for="sexo" class="texto__caixadetexto">Sexo</label>
+                        <select id="sexo" class="caixadetexto" required>
+                            <option value="" disabled selected>Selecione</option>
+                            <option>Feminino</option>
+                            <option>Masculino</option>
+                            <option>Outro</option>
+                        </select>
+                    </div>
+        
+                    <div class="formulario__grupo" id="#email">
+                        <label for="email" class="texto__caixadetexto">E-mail</label>
+                        <input type="email" class="caixadetexto" id="email" placeholder="Digite seu e-mail" required>
+                        <span class="erro-email">Insira um e-mail válido</span>
+                    </div>
+        
+                    <div class="formulario__grupo">
+                        <label for="telefone" class="texto__caixadetexto">Telefone</label>
+                        <input type="text" class="caixadetexto" id="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                    </div>
 
-    </main>
-    <footer>
+                    <div class="formulario__grupo" id="documento__identidade">
+                        <label for="documento" class="texto__caixadetexto">Documento de identidade</label>
+                        <div class="upload-container">
+                            <input type="file" id="documento" class="file-input" accept="image/*, .pdf">
+                            <label for="documento" class="file-label">
+                                <img src="assets/icons/cloud-upload.png" class="upload__image" alt="Upload Ícone">
+                                <span class="upload__text">Clique aqui para selecionar o arquivo</span>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </section>
 
-    </footer>
-</body>
-    <script src="scripts/script.js"></script>
-</html>
+        <section class="endereco__container">
+                <h3 class="formulario__secao">Endereço residencial</h3>
+        
+        <div class="formulario__grupo">
+            <label for="cep" class="texto__caixadetexto">CEP</label>
+            <input type="text" class="caixadetexto" id="cep" placeholder="Digite seu CEP" required>
+        </div>
+        
+        <div class="formulario__linha">
+            <div class="formulario__grupo__linha" id="linha">
+                <label for="rua" class="texto__caixadetexto">Rua</label>
+                <input type="text" class="caixadetexto" id="rua" placeholder="Rua" value=>
+            </div>
+
+            <div class="formulario__grupo__linha" id="linha">
+                <label for="numero" class="texto__caixadetexto">Número</label>
+                <input type="text" class="caixadetexto" id="numero" placeholder="Digite o número" required>
+            </div>
+        </div>
+        
+        <div class="formulario__linha">
+            <div class="formulario__grupo__linha" id="linha">
+                <label for="cidade" class="texto__caixadetexto">Cidade</label>
+                <input type="text" class="caixadetexto" id="cidade" placeholder="Cidade" value= >
+            </div>
+            <div class="formulario__grupo__linha" id="linha">
+                <label for="estado" class="texto__caixadetexto">Estado</label>
+                <input type="text" class="caixadetexto" id="estado" value="MA" readonly>
+            </div>
+        </div>
+        
+        <div class="formulario__grupo" id="comprovante__residencia">
+            <label for="documento" class="texto__caixadetexto">Comprovante de residência</label>
+            <div class="upload-container">
+                <input type="file" id="documento" class="file-input" accept="image/*, .pdf">
+                <label for="documento" class="file-label">
+                    <img src="assets/icons/cloud-upload.png" class="upload__image" alt="Upload Ícone">
+                    <span class="upload__text">Clique aqui para selecionar o arquivo</span>
+                </label>
+            </div>
+        </div>
+            </section>
+        
+            <script src="script.js"></script>
+        </body>
+        </html>    
+        
+        

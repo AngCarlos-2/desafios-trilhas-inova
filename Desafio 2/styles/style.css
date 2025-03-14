@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 .header__container {
@@ -27,7 +28,6 @@
 }
 
 .header__link__texto {
-    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -40,7 +40,6 @@
 }
 
 .header__conteudo {
-    font-family: "Poppins", sans-serif;
     letter-spacing: 0%;
     vertical-align: middle;
     width: 528px;
@@ -61,4 +60,180 @@
     font-size: 16px;
     line-height: 150%;
     height: 48px;
+}
+
+.informacoes__container, .endereco__container {
+    width: 528px;
+    height: 832px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 24px;
+}
+
+.endereco__container {
+    padding-top: 150px;
+}
+
+.formulario__secao {
+    width: 528px;
+    height: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: #292524;
+}
+
+.formulario__grupo {
+    width: 528px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    gap: 4px;
+}
+
+.texto__caixadetexto {
+    width: 528px;
+    height: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0;
+    color: #57534E;
+}
+
+.caixadetexto {
+    width: 528px;
+    font-size: 16px;
+    height: 48px;
+    border-radius: 8px;
+    padding: 12px 16px 12px 16px;
+    border: 1px solid #ccc;
+    gap: 8px;
+}
+
+#form {
+    gap: 24px;
+}
+
+#documento__identidade {
+    height: 188px;
+    gap: 8px;
+}
+
+#email {
+    height: 96px;
+}
+
+#sexo {
+    width: 561px;
+}
+
+.upload-container {
+    position: relative;
+    width: 520px;
+    height: 160px;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.file-input {
+    display: none;
+    width: 528px;
+    height: 160px;
+}
+
+.file-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    color: #57534E;
+    font-weight: 500;
+}
+
+.upload__image {
+    width: 48px;
+    height: 48px;
+}
+
+.upload__text {
+    width: 163px;
+    height: 48px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0;
+    text-align: center;
+    vertical-align: middle;
+    color: #A8A29E;
+}
+
+.formulario__linha {
+    width: 528px;
+    height: 72px;
+    display: flex;
+    gap: 20px;
+}
+
+.formulario__grupo__linha {
+    width: 528px;
+    height: 80px;
+    gap: 4px;
+}
+
+#rua, #cidade {
+    width: 332px;
+    height: 30px;
+}
+
+#numero, #estado {
+    width: 145px;
+    height: 30px;
+}
+
+#rua, #cidade, #estado {
+    opacity: 50%;
+    background-color: #E7E5E4;
+    border: 1px solid #ccc;
+    cursor: not-allowed;
+}
+
+#comprovante__residencia {
+    padding-top: 24px;
+}
+
+/* Tags gerais */
+input, select {
+    outline: none;
+}
+
+
+input:focus, select:focus {
+    border-color: #f97316; /* Laranja */
+    box-shadow: 0px 0px 5px rgba(249, 115, 22, 0.5); /* Laranja com opacidade */
+}
+
+.erro input {
+    border-color: #dc2626 !important; /* Vermelho */
+}
+
+
+.erro-email {
+    display: none;
+    color: #dc2626; /* Vermelho */
+    font-size: 14px;
+    margin-top: 4px;
+    font-weight: 500;
+}
+
+
+.erro .erro-email {
+    display: block;
 }
