@@ -18,7 +18,12 @@
             <h1 class="header__texto">Formulário de inscrição</h1>
             <h2 class="header__texto__preencher">Preencha os dados abaixo para fazer sua inscrição no Programa Trilhas.</h2>
         </div>
+        </header>
         <body>
+            <div class="image__container">
+                <img src="assets/ilustration/Ilustration.png" class="ilustracao" alt="">
+                <img src="assets/logo/Logo.png" class="logo" alt="">
+            </div>
             <section class="informacoes__container">
                 <h2 class="formulario__secao">Informações do participante</h2>
         
@@ -156,15 +161,14 @@
         </div>
         
         <div class="botoes__container">
-            <a href="index.html" class="botao__cancelar"><label for="" class="botao__texto">Cancelar</label></a>
-            <a href="" class="botao__confirmar"><label for="" class="botao__texto2">Fazer inscrição</label></a>
+            <a href="index.html" class="botao__cancelar"><label for="" class="botao__texto" onclick="cancelar()">Cancelar</label></a>
+            <a href="" class="botao__confirmar"><label for="" class="botao__texto2" onclick="confirmar()">Fazer inscrição</label></a>
         </div>
-
+        <script src="scripts/main.js"></script>
+        </body>
         <footer>
             <img src="assets/logo/Logo.png" class="imagem__footer" alt="">
         </footer>
-            <script src="script.js"></script>
-        </body>
         </html>    
         
         
