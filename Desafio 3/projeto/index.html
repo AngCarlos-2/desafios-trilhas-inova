@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Inscrição - Trilhas Inova</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="header__container">
+        <div class="header__botao">
+            <a href="" class="header__botao__link">
+                <img src="assets/icons/arrow-left-02.png" alt="" class="header__botao__imagem">
+            </a>
+            <span class="header__link__texto">Voltar</span>
+        </div>
+        <div class="header__conteudo">
+            <h1 class="header__texto">Formulário de inscrição</h1>
+            <h2 class="header__texto__preencher">Preencha os dados abaixo para fazer sua inscrição no Programa Trilhas.</h2>
+        </div>
+        </header>
+        <body>
+            <div class="image__container">
+                <img src="assets/ilustration/Ilustration.png" class="ilustracao" alt="">
+                <img src="assets/logo/Logo.png" class="logo" alt="">
+            </div>
+            <section class="informacoes__container">
+                <h2 class="formulario__secao">Informações do participante</h2>
+        
+                <form id="form">
+                    <div class="formulario__grupo">
+                        <label for="nome" class="texto__caixadetexto">Nome completo</label>
+                        <input type="text" class="caixadetexto" id="nome" placeholder="Digite seu nome" required>
+                    </div>
+        
+                    <div class="formulario__grupo">
+                        <label for="nascimento" class="texto__caixadetexto">Data de nascimento</label>
+                        <input type="date" class="caixadetexto" id="nascimento" required>
+                    </div>
+        
+                    <div class="formulario__grupo">
+                        <label for="cpf" class="texto__caixadetexto">CPF</label>
+                        <input type="text" class="caixadetexto" id="cpf" placeholder="XXX.XXX.XXX-XX" required>
+                    </div>
+        
+                    <div class="formulario__grupo">
+                        <label for="sexo" class="texto__caixadetexto">Sexo</label>
+                        <select id="sexo" class="caixadetexto" required>
+                            <option value="" disabled selected>Selecione</option>
+                            <option>Feminino</option>
+                            <option>Masculino</option>
+                            <option>Outro</option>
+                        </select>
+                    </div>
+        
+                    <div class="formulario__grupo" id="#email">
+                        <label for="email" class="texto__caixadetexto">E-mail</label>
+                        <input type="email" class="caixadetexto" id="email" placeholder="Digite seu e-mail" required>
+                        <span class="erro-email">Insira um e-mail válido</span>
+                    </div>
+        
+                    <div class="formulario__grupo">
+                        <label for="telefone" class="texto__caixadetexto">Telefone</label>
+                        <input type="text" class="caixadetexto" id="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                    </div>
+
+                    <div class="formulario__grupo" id="documento__identidade">
+                        <label for="documento" class="texto__caixadetexto">Documento de identidade</label>
+                        <div class="upload-container">
+                            <input type="file" id="documento" class="file-input" accept="image/*, .pdf">
+                            <label for="documento" class="file-label">
+                                <img src="assets/icons/cloud-upload.png" class="upload__image" alt="Upload Ícone">
+                                <span class="upload__text">Clique aqui para selecionar o arquivo</span>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+        <section class="endereco__container">
+                <h3 class="formulario__secao">Endereço residencial</h3>
+        
+        <div class="formulario__grupo">
+            <label for="cep" class="texto__caixadetexto">CEP</label>
+            <input type="text" class="caixadetexto" id="cep" placeholder="Digite seu CEP" required>
+        </div>
+        
+        <div class="formulario__linha">
+            <div class="formulario__grupo__linha" id="linha">
+                <label for="rua" class="texto__caixadetexto">Rua</label>
+                <input type="text" class="caixadetexto" id="rua" placeholder="Rua" value=>
+            </div>
+
+            <div class="formulario__grupo__linha" id="linha">
+                <label for="numero" class="texto__caixadetexto">Número</label>
+                <input type="text" class="caixadetexto" id="numero" placeholder="Digite o número" required>
+            </div>
+        </div>
+        
+        <div class="formulario__linha">
+            <div class="formulario__grupo__linha" id="linha">
+                <label for="cidade" class="texto__caixadetexto">Cidade</label>
+                <input type="text" class="caixadetexto" id="cidade" placeholder="Cidade" value= >
+            </div>
+            <div class="formulario__grupo__linha" id="linha">
+                <label for="estado" class="texto__caixadetexto">Estado</label>
+                <input type="text" class="caixadetexto" id="estado" value="MA" readonly>
+            </div>
+        </div>
+        
+        <div class="formulario__grupo" id="comprovante__residencia">
+            <label for="documento" class="texto__caixadetexto">Comprovante de residência</label>
+            <div class="upload-container">
+                <input type="file" id="documento" class="file-input" accept="image/*, .pdf">
+                <label for="documento" class="file-label">
+                    <img src="assets/icons/cloud-upload.png" class="upload__image" alt="Upload Ícone">
+                    <span class="upload__text">Clique aqui para selecionar o arquivo</span>
+                </label>
+            </div>
+        </div>
+            </section>
+        <section class="trilhas__secao">
+            <h3 class="formulario__secao">Trilhas de aprendizagem</h3>
+
+            <div class="trilhas__container">
+                <h3 class="trilhas__titulo">Selecione apenas uma trilha</h3>
+
+                <div class="trilhas__opcoes">
+                    <div class="trilhas__opcao">
+                        <input type="checkbox" class="trilhas__marcar">
+                        <img src="assets/icons/front-end.png" class="trilha__imagem" alt="Ícone Front-end">
+                        <span class="trilha">Programação Front-end</span>
+                    </div>
+                    <div class="trilhas__opcao">
+                        <input type="checkbox" class="trilhas__marcar">
+                        <img src="assets/icons/back-end.png" class="trilha__imagem" alt="Ícone Back-end">
+                        <span class="trilha">Programação Back-end</span>
+                    </div>
+                    <div class="trilhas__opcao">
+                        <input type="checkbox" class="trilhas__marcar">
+                        <img src="assets/icons/jogos.png" class="trilha__imagem" alt="Ícone Jogos">
+                        <span class="trilha">Programação de Jogos</span>
+                    </div>
+                    <div class="trilhas__opcao">
+                        <input type="checkbox" class="trilhas__marcar">
+                        <img src="assets/icons/ux.png" class="trilha__imagem" alt="Ícone UX">
+                        <span class="trilha">Design e Experiência</span>
+                    </div>
+                    <div class="trilhas__opcao">
+                        <input type="checkbox" class="trilhas__marcar">
+                        <img src="assets/icons/Frame 48095973.png" class="trilha__imagem" alt="Ícone ">
+                        <span class="trilha">Ciência de Dados</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="termos__container">
+            <input type="checkbox" class="termos__check" name="" id="">
+            <p class="termos__texto">Declaro que li e concordo com os <a href="" class="links__politica">Termos e Condições</a> e com a <a href="" class="links__politica">Política de Privacidade</a>.</p>
+        </div>
+        
+        <div class="botoes__container">
+            <a href="index.html" class="botao__cancelar"><label for="" class="botao__texto" onclick="cancelar()">Cancelar</label></a>
+            <a href="" class="botao__confirmar"><label for="" class="botao__texto2" onclick="confirmar()">Fazer inscrição</label></a>
+        </div>
+        <script src="scripts/main.js"></script>
+        </body>
+        <footer>
+            <img src="assets/logo/Logo.png" class="imagem__footer" alt="">
+        </footer>
+        </html>    
+        
+        
