@@ -432,3 +432,194 @@ footer {
 .imagem__footer {
     margin-left: 57%;
 }
+
+@media (max-width: 1200px) {
+    header {
+        margin-left: 15px;
+        max-width: 100%;
+    }
+
+    body {
+        padding-left: 90px;
+    }
+
+    section {
+        padding-left: 50px;
+    }
+
+    .trilhas__secao {
+        padding-left: 20px;
+    }
+
+    .image__container {
+        margin-left: 1100px;
+        /*width: 300px;
+        height: 300px;*/
+    }
+    
+    /*.logo {
+        width: 106.12px;
+        height: 13,24px;
+        margin-left: 100px;
+        padding-bottom: 0px;
+    }
+
+    .ilustracao {
+        margin-left: 65px;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }*/
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 30px;
+        padding-left: 325px;
+    }
+
+    #form {
+        margin-top: 500px;
+    }
+
+    .image__container {
+        display: none;
+    }
+
+    .header__botao {
+        justify-content: center;
+    }
+
+    .header__link__texto {
+        font-size: 14px;
+    }
+
+    .header__conteudo {
+        padding: 0 8px;
+    }
+
+    .header__texto {
+        font-size: 20px;
+    }
+
+    .header__texto__preencher {
+        font-size: 14px;
+    }
+
+    .informacoes__container, .endereco__container {
+        padding: 12px;
+    }
+
+    .endereco__container {
+        margin-top: 650px;
+    }
+
+    .formulario__secao {
+        font-size: 14px;
+    }
+
+    .upload-container {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .file-label {
+        font-size: 14px;
+    }
+
+    .botoes__container {
+        gap: 16px;
+        padding: 16px 0;
+    }
+
+    .botao__texto, .botao__texto2 {
+        font-size: 14px;
+    }
+
+    footer {
+        width: 90vw;
+        background-color: blue;
+    }
+    
+    .imagem__footer {
+        margin-left: 17%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-top: 15px;
+        padding-left: 225px;
+        width: 25%;
+    }
+
+    #form {
+        margin-top: 500px;
+    }
+    
+    .header__conteudo {
+        padding: 0 4px;
+    }
+
+    .header__texto {
+        font-size: 18px;
+    }
+
+    .header__texto__preencher {
+        font-size: 12px;
+    }
+
+    .caixadetexto {
+        font-size: 14px;
+        height: 40px;
+        padding: 8px;
+    }
+
+    .formulario__linha {
+        gap: 12px;
+    }
+
+    .upload-container {
+        padding: 10px;
+    }
+
+    .file-label {
+        font-size: 12px;
+    }
+
+    .botoes__container {
+        gap: 12px;
+    }
+
+    .botao__texto, .botao__texto2 {
+        font-size: 12px;
+    }
+
+    .trilhas__opcao {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .trilha__imagem {
+        width: 50px;
+        height: 50px;
+    }
+
+    .termos__texto {
+        font-size: 12px;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    footer {
+        width: 150vw;
+        background-color: blue;
+    }
+    
+    .imagem__footer {
+        margin-left: 21%;
+    }
+}
