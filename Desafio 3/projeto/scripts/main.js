@@ -26,20 +26,26 @@ document.addEventListener("DOMContentLoaded", () => {
             emailInput.style.borderColor = "red"; 
         }
     });
+ 
+    const textBoxes = document.querySelectorAll(".caixadetexto");
+    const textError = document.querySelector(".erro-geral");
 
-    /*const textBox = document.getElementsByClassName("caixadetexto");
-
+    textError.style.display = "none"; 
+    
+    textBoxes.forEach((textBox) => {
     textBox.addEventListener("input", () => {
         const textBoxValue = textBox.value.trim();
+        textBox.parentElement.appendChild(textError);
 
         if (textBoxValue.length > 0) {
-            emailError.style.display = "none"; 
-            emailInput.style.borderColor = ""; 
-        } else {
-            emailError.style.display = "block"; 
-            emailInput.style.borderColor = "red"; 
+            textError.style.display = "none"; 
+            textBox.style.borderColor = ""; 
+        } else if (textBoxValue.length <= 0) {
+            textError.style.display = "block"; 
+            textBox.style.borderColor = "red";
         }
-    })*/
-});
+    })
+})
+})
 
 

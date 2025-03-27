@@ -246,7 +246,7 @@ input:focus, select:focus {
 }
 
 
-.erro-email {
+.erro-email, .erro-geral {
     display: none;
     color: #dc2626; /* Vermelho */
     font-size: 14px;
@@ -254,8 +254,7 @@ input:focus, select:focus {
     font-weight: 500;
 }
 
-
-.erro .erro-email {
+.erro, .erro-email, .erro-geral {
     display: block;
 }
 
