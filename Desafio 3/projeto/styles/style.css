@@ -246,7 +246,7 @@ input:focus, select:focus {
 }
 
 
-.erro-email, .erro-geral {
+.erro-email, .erro-geral, .erro-cpf, .erro-telefone, .erro-cep {
     display: none;
     color: #dc2626; /* Vermelho */
     font-size: 14px;
@@ -254,7 +254,7 @@ input:focus, select:focus {
     font-weight: 500;
 }
 
-.erro, .erro-email, .erro-geral {
+.erro, .erro-email, .erro-geral, .erro-cpf, .erro-telefone, .erro-cep {
     display: block;
 }
 

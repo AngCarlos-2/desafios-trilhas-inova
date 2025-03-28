@@ -1,3 +1,10 @@
+const cpfField = document.getElementById("cpf");
+const telefoneField = document.getElementById("telefone");
+const cepField =document.getElementById("cep");
+const ruaField =document.getElementById("rua");
+const cidadeField =document.getElementById("cidade");
+const estadoField =document.getElementById("estado");
+
 function cancelar() {
     alert("Inscrição cancelada");
 }
@@ -46,6 +53,69 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     })
 })
+
+    cpfField.addEventListener("input", () => {
+        const cpfValue = cpfField.value.trim().replace(/\D/g, "");
+        const cpfError = document.querySelector(".erro-cpf")
+
+        cpfError.style.display = 'none';
+        
+        if (cpfValue.length === 11 && /^\d+$/.test(cpfValue)) {
+            cpfError.style.display = "none";
+            cpfField.style.borderColor = "";
+        } else {
+            cpfError.style.display = "block";
+            cpfField.style.borderColor = "red";
+        }
+    })
+
+    telefoneField.addEventListener("input", () => {
+        const telefoneValue = telefoneField.value.trim().replace(/\D/g, "");
+        const telefoneError = document.querySelector(".erro-telefone")
+
+        telefoneError.style.display = 'none';
+
+        if (telefoneValue.length == 11) {
+            telefoneError.style.display = "none";
+            telefoneField.style.borderColor = "";
+        } else {
+            telefoneError.style.display = "block";
+            telefoneField.style.borderColor = "red";
+        }
+    })
+
+    cepField.addEventListener("input", () => {
+        const cepValue = cepField.value.trim().replace(/\D/g, "");
+        const cepError = document.querySelector(".erro-cep");
+
+        cepError.style.display = 'none';
+
+        if (cepValue.length == 8) {
+            cepError.style.display = "none";
+            cepField.style.borderColor = "";
+            ruaField.style.cursor = 'allowed';
+            cidadeField.style.cursor = 'allowed';
+            estadoField.style.cursor = 'allowed';
+            ruaField.style.backgroundColor = 'white';
+            cidadeField.style.backgroundColor = 'white';
+            estadoField.style.backgroundColor = 'white';
+            ruaField.style.opacity = '100%';
+            cidadeField.style.opacity = '100%';
+            estadoField.style.opacity = '100%';
+        } else {
+            cepError.style.display = "block";
+            cepField.style.borderColor = "red";
+            ruaField.style.cursor = 'not-allowed';
+            cidadeField.style.cursor = 'not-allowed';
+            estadoField.style.cursor = 'not-allowed';
+            ruaField.style.backgroundColor = '#E7E5E4';
+            cidadeField.style.backgroundColor = '#E7E5E4';
+            estadoField.style.backgroundColor = '#E7E5E4;';
+            ruaField.style.opacity = '50%';
+            cidadeField.style.opacity = '50%';
+            estadoField.style.opacity = '50%';
+        }
+    })
 })
 
 
