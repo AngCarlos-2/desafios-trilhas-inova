@@ -122,7 +122,7 @@
                 </label>
             </div>
         </div>
-            </section>
+        </section>
         <section class="trilhas__secao">
             <h3 class="formulario__secao">Trilhas de aprendizagem</h3>
 
@@ -159,6 +159,20 @@
             </div>
         </section>
 
+        <section class="trilhas__login__info">
+            <div class="formulario__grupo">
+                <label for="id" class="texto__caixadetexto">ID do usuário</label>
+                <input type="id" class="caixadetexto" id="id" required>
+                <span class="erro-ID">ID inválido</span>
+            </div>
+
+            <div class="formulario__grupo">
+                <label for="password" class="texto__caixadetexto">Senha</label>
+                <input type="password" class="caixadetexto" id="password" required>
+                <span class="erro-senha">Senha inválida</span>
+            </div>
+        </section>
+
         <div class="termos__container">
             <input type="checkbox" class="termos__check" name="" id="">
             <p class="termos__texto">Declaro que li e concordo com os <a href="" class="links__politica">Termos e Condições</a> e com a <a href="" class="links__politica">Política de Privacidade</a>.</p>
@@ -167,6 +181,7 @@
         <div class="botoes__container">
             <a href="index.html" class="botao__cancelar" onclick="cancelar()"><label for="" class="botao__texto">Cancelar</label></a>
             <a href="" class="botao__confirmar" onclick="confirmar()"><label for="" class="botao__texto2">Fazer inscrição</label></a>
+            <a href="" class="botao__salvar" onclick="salvar()"><label for="" class="botao__texto3">Salvar informações</label></a>
         </div>
         <script src="scripts/main.js"></script>
         </body>

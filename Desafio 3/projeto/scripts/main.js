@@ -13,6 +13,10 @@ function confirmar() {
     alert("Inscrição confirmada");
 }
 
+function salvar() {
+    alert("Informações salvas");
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     const emailInput = document.getElementById("email");
     const emailError = document.querySelector(".erro-email");

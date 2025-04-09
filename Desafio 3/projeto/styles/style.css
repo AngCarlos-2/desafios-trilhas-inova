@@ -246,7 +246,7 @@ input:focus, select:focus {
 }
 
 
-.erro-email, .erro-geral, .erro-cpf, .erro-telefone, .erro-cep {
+.erro-email, .erro-geral, .erro-cpf, .erro-telefone, .erro-cep, .erro-ID, .erro-senha {
     display: none;
     color: #dc2626; /* Vermelho */
     font-size: 14px;
@@ -254,7 +254,7 @@ input:focus, select:focus {
     font-weight: 500;
 }
 
-.erro, .erro-email, .erro-geral, .erro-cpf, .erro-telefone, .erro-cep {
+.erro, .erro-email, .erro-geral, .erro-cpf, .erro-telefone, .erro-cep, .erro-ID, .erro-senha {
     display: block;
 }
 
@@ -333,6 +333,10 @@ input:focus, select:focus {
     gap: 10px;
 }
 
+.trilhas__login__info {
+    padding-top: 250px;
+}
+
 .termos__container {
     width: 528px;
     height: 48px;
@@ -376,7 +380,7 @@ input:focus, select:focus {
     height: 64px;
     display: flex;
     flex-direction: row;
-    margin-left: 340px;
+    /*margin-left: 340px;*/
     margin-top: 50px;
 }
 
@@ -392,7 +396,7 @@ input:focus, select:focus {
     gap: 8px;
 }
 
-.botao__texto, .botao__texto2 {
+.botao__texto, .botao__texto2, .botao__texto3 {
     width: 75px;
     height: 24px;
     font-weight: 500;
@@ -405,7 +409,7 @@ input:focus, select:focus {
 }
 
 .botao__confirmar {
-    min-width: 120px;
+    min-width: 140px;
     width: 150px;
     height: 30px;
     border-radius: 8px;
@@ -417,10 +421,23 @@ input:focus, select:focus {
     margin-left: 25px;
 }
 
-.botao__texto2 {
+.botao__texto2, .botao__texto3 {
     width: 121px;
     height: 24px;
     color: #FFFFFF;
+}
+
+.botao__salvar {
+    min-width: 160px;
+    width: 150px;
+    height: 30px;
+    border-radius: 8px;
+    padding: 12px 24px 12px 24px;
+    gap: 8px;
+    text-decoration: none;
+    background-color: #ff2f00;
+    text-align: center;
+    margin-left: 25px;
 }
 
 footer {
