@@ -246,7 +246,7 @@ input:focus, select:focus {
 }
 
 
-.erro-email, .erro-geral, .erro-cpf, .erro-telefone, .erro-cep, .erro-ID, .erro-senha {
+.erro-email, .erro-nascimento, .erro-geral, .erro-sexo, .erro-cpf, .erro-telefone, .erro-cep, .erro-ID, .erro-senha {
     display: none;
     color: #dc2626; /* Vermelho */
     font-size: 14px;
@@ -254,7 +254,7 @@ input:focus, select:focus {
     font-weight: 500;
 }
 
-.erro, .erro-email, .erro-geral, .erro-cpf, .erro-telefone, .erro-cep, .erro-ID, .erro-senha {
+.erro, .erro-email, .erro-nascimento, .erro-sexo, .erro-geral, .erro-cpf, .erro-telefone, .erro-cep, .erro-ID, .erro-senha {
     display: block;
 }
 
@@ -409,9 +409,9 @@ input:focus, select:focus {
 }
 
 .botao__confirmar {
-    min-width: 140px;
+    min-width: 190px;
     width: 150px;
-    height: 30px;
+    height: 55px;
     border-radius: 8px;
     padding: 12px 24px 12px 24px;
     gap: 8px;
@@ -428,9 +428,9 @@ input:focus, select:focus {
 }
 
 .botao__salvar {
-    min-width: 160px;
+    min-width: 209px;
     width: 150px;
-    height: 30px;
+    height: 55px;
     border-radius: 8px;
     padding: 12px 24px 12px 24px;
     gap: 8px;

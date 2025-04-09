@@ -36,7 +36,8 @@
         
                     <div class="formulario__grupo">
                         <label for="nascimento" class="texto__caixadetexto">Data de nascimento</label>
-                        <input type="date" class="caixadetexto" id="nascimento" required> 
+                        <input type="date" class="caixadetexto" id="nascimento" required>
+                        <span class="erro-nascimento">Data de nascimento obrigatória.</span> 
                     </div>
         
                     <div class="formulario__grupo">
@@ -53,6 +54,7 @@
                             <option>Masculino</option>
                             <option>Outro</option>
                         </select>
+                        <span class="erro-sexo">Este campo é obrigatório.</span> 
                     </div>
         
                     <div class="formulario__grupo" id="#email">
@@ -180,8 +182,9 @@
         
         <div class="botoes__container">
             <a href="index.html" class="botao__cancelar" onclick="cancelar()"><label for="" class="botao__texto">Cancelar</label></a>
-            <a href="" class="botao__confirmar" onclick="confirmar()"><label for="" class="botao__texto2">Fazer inscrição</label></a>
-            <a href="" class="botao__salvar" onclick="salvar()"><label for="" class="botao__texto3">Salvar informações</label></a>
+            <button class="botao__confirmar" onclick="confirmar()"><label class="botao__texto2">Fazer inscrição</label></button>
+            <button class="botao__salvar" onclick="salvar()"><label class="botao__texto3">Salvar informações</label></button>
+
         </div>
         <script src="scripts/main.js"></script>
         </body>
