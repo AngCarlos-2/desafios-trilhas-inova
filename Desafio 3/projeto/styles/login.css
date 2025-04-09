@@ -1,0 +1,123 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  
+  body {
+    background-color: #f5f5f5;
+  }
+  
+  
+  .header__container {
+    background-color: #1C2BA3;
+    color: white;
+    padding: 32px 24px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .logo {
+    height: 64px;
+    width: auto;
+  }
+  
+  .header__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .header__texto {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .header__texto__preencher {
+    font-size: 16px;
+    color: #E0E0E0;
+  }
+  
+ 
+  .informacoes__container {
+    max-width: 420px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 32px 24px;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  }
+  
+  #form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+ 
+  .formulario__grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+ 
+  .texto__caixadetexto {
+    font-size: 16px;
+    font-weight: 500;
+    color: #292524;
+  }
+  
+ 
+  .caixadetexto {
+    height: 48px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #D6D3D1;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .caixadetexto:focus {
+    border-color: #E43A12;
+    outline: none;
+    box-shadow: 0 0 4px rgba(228, 58, 18, 0.4);
+  }
+  
+
+  button.caixadetexto {
+    background-color: #f3541c;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.caixadetexto:hover {
+    background-color: #44403c;
+  }
+  
+  
+  @media (max-width: 480px) {
+    .header__container {
+      flex-direction: column;
+      text-align: center;
+      padding: 24px 16px;
+    }
+  
+    .logo {
+      height: 48px;
+    }
+  
+    .informacoes__container {
+      margin: 24px 16px;
+      padding: 24px 16px;
+    }
+  }

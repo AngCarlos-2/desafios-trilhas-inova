@@ -1,11 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de inscrição - Login</title>
+    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tela de Login</title>
+  <link rel="stylesheet" href="styles/login.css" />
 </head>
 <body>
+  <header class="header__container">
+
+    <img class="logo" src="assets/logo/Logo.png" alt="Logo Trilhas Inova" />
     
+    <div class="header__conteudo">
+      <h1 class="header__texto">Bem-vindo de volta!</h1>
+      <p class="header__texto__preencher">Faça login para acessar sua conta.</p>
+    </div>
+  </header>
+
+  <main class="informacoes__container">
+    <form id="form">
+      <div class="formulario__grupo">
+        <label class="texto__caixadetexto" for="usuario">ID do Usuário</label>
+        <input class="caixadetexto" type="text" id="usuario" name="usuario" required />
+      </div>
+
+      <div class="formulario__grupo">
+        <label class="texto__caixadetexto" for="senha">Senha</label>
+        <input class="caixadetexto" type="password" id="senha" name="senha" required />
+      </div>
+
+      <div class="formulario__grupo">
+        <button class="caixadetexto" style="background-color: #f3540c; color: white; cursor: pointer;" type="submit">
+          Entrar
+        </button>
+      </div>
+    </form>
+  </main>
 </body>
-</html>
+
